@@ -11,3 +11,5 @@ More Information
 * **serial.c** - A serial program (without pthreads to approximate the value of PI)
 * **pthread.c** - A Parallel program using pthreads to approximate the value of PI
 * **pthreadTimed.c** - Same as pthread.c but measures time taken for the operations.
+
+Instructions for running each program is included in the source code documentation of each file.

@@ -1,12 +1,11 @@
 /******************************************************************************
  * * FILE: pthread.c
  * * DESCRIPTION:
- * *   Calculates the value of pi using a parallel implementation using pthreads
+ * *   Calculates the value of pi using a parallel implementation using pthreads. 
+ * *   Also shows the time taken for the operation.
  * * HOW TO COMPILE:
- * *   gcc -lm -pthread pthread.c
+ * *   gcc -lm -pthread pthreadTimed.c
  * * AUTHOR: Ishan Thilina Somasiri
- * * INDEX NO.: 090498L
- * * E-MAIL: ishanthilina@gmail.com
  * *
  * *
  * * Time measurement code is from - 
@@ -16,7 +15,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h> 
-#define NUM_THREADS 1000         //number of threads
+#define NUM_THREADS 100         //number of threads
 #define TOT_COUNT 10000055      //total number of iterations
 #define BILLION  1E9; 
 
@@ -121,8 +120,8 @@ int main(int argc, char *argv[])
      double accum = ( requestEnd.tv_sec - requestStart.tv_sec )
        + ( requestEnd.tv_nsec - requestStart.tv_nsec )
        / BILLION;
-     printf( "%lf\n", accum );
-     printf("Value for Pi is %f \n",1, 4*(tot_in/TOT_COUNT));
+     printf( "Time taken: %lf\n", accum );
+     printf("Value for Pi: %f \n",1, 4*(tot_in/TOT_COUNT));
    
    /* Last thing that main() should do */
    pthread_exit(NULL);

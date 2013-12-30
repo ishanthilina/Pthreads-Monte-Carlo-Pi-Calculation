@@ -2,11 +2,13 @@
  * * FILE: serial.c
  * * DESCRIPTION:
  * *   Calculates the value of pi using a serial implementation.
+ * *
  * * HOW TO COMPILE:
  * *   gcc -lm serial.c
+ * * HOW TO RUN:
+ * *    ./a.out
+ * *
  * * AUTHOR: Ishan Thilina Somasiri
- * * INDEX NO.: 090498L
- * * E-MAIL: ishanthilina@gmail.com
  * ******************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>

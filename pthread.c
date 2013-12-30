@@ -2,11 +2,13 @@
  * * FILE: pthread.c
  * * DESCRIPTION:
  * *   Calculates the value of pi using a parallel implementation using pthreads
+ * *
  * * HOW TO COMPILE:
  * *   gcc -lm -pthread pthread.c
+ * * HOW TO RUN:
+ * *    ./a.out
+ * *
  * * AUTHOR: Ishan Thilina Somasiri
- * * INDEX NO.: 090498L
- * * E-MAIL: ishanthilina@gmail.com
  * ******************************************************************************/
 #include <pthread.h>
 #include <stdio.h>

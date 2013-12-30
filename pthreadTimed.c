@@ -3,8 +3,12 @@
  * * DESCRIPTION:
  * *   Calculates the value of pi using a parallel implementation using pthreads. 
  * *   Also shows the time taken for the operation.
+ * *
  * * HOW TO COMPILE:
  * *   gcc -lm -pthread pthreadTimed.c
+ * * HOW TO RUN:
+ * *    ./a.out
+ * *
  * * AUTHOR: Ishan Thilina Somasiri
  * *
  * *
